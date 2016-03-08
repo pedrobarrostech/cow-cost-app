@@ -1,0 +1,30 @@
+{
+  "name": "cow_cost_app",
+  "version": "1.0.0",
+  "description": "app to consome api service",
+   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pedrobarrostech/cow-cost-app.git"
+  },
+  "keywords": [
+    "symfony3",
+    "angular",
+    "consume",
+    "api"
+  ],
+  "author": "Pedro Barros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrobarrostech/cow-cost-app/issues"
+  },
+  "homepage": "https://github.com/pedrobarrostech/cow-cost-app#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "materialize-css": "^0.97.5"
+  }
+}

@@ -1,0 +1,8 @@
+.table tr td, .table thead th{
+	text-align:center;
+}
+
+.right{
+	float:right;
+}
+

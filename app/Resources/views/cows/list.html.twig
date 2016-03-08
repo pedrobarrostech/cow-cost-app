@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+
+        <h3>Cow Cost <a class="btn-floating btn-large waves-effect waves-light right" href="{{ path('cow_registration') }}"><i class="material-icons">add</i></a></h3>
+
+        {% if list is defined and list %}
+        <table class="table" ng-controler="CowListController">
+            <thead>
+                <th>ID.</th>
+                <th>Weight</th>
+                <th>Age</th>
+                <th>Price</th>
+                <th>Cost per Year</th>
+            </thead>
+
+            <tbody>
+            {% for cow in list %}
+                <tr>
+                    <td>{{ cow.id }}</td>
+                    <td>{{ cow.weight }} kg</td>
+                    <td>{{ cow.age }}</td>
+                    <td>R$ {{ cow.price|number_format(2, '.', ',') }}</td>
+                    <td>R$ {{ cow.cost|number_format(2, '.', ',') }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    
+    
+
+    </div>
+
+
+
+{% endblock %}
