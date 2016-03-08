@@ -18,6 +18,7 @@ npm install
 
 Running
 --------------
+Run in root folder
 ```
 php bin/console server:run
 ```
