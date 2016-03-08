@@ -25,5 +25,6 @@ php bin/console server:run
 Dependencies
 --------------
 * composer
+* node
 * npm
 * materialize-css
